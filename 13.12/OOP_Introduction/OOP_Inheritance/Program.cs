@@ -149,7 +149,7 @@ foreach(BaseClass item in urunler)
     }
 
     //Islemci
-
+    //eray test
     //EkranKarti
 
     //Bilgisayar
