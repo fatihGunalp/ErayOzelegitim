@@ -8,23 +8,23 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Fatih\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\eraye\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fatih\\Desktop\\ErayOzelEgitim\\13.12\\OOP_Introduction\\OOP_Introduction\\OOP_Introduction.csproj",
+      "projectUniqueName": "C:\\Users\\eraye\\Desktop\\BilgeAdam_Fatih_Hoca\\ErayOzelegitim\\13.12\\OOP_Introduction\\OOP_Introduction\\OOP_Introduction.csproj",
       "projectName": "OOP_Introduction",
-      "projectPath": "C:\\Users\\Fatih\\Desktop\\ErayOzelEgitim\\13.12\\OOP_Introduction\\OOP_Introduction\\OOP_Introduction.csproj",
-      "packagesPath": "C:\\Users\\Fatih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fatih\\Desktop\\ErayOzelEgitim\\13.12\\OOP_Introduction\\OOP_Introduction\\obj\\",
+      "projectPath": "C:\\Users\\eraye\\Desktop\\BilgeAdam_Fatih_Hoca\\ErayOzelegitim\\13.12\\OOP_Introduction\\OOP_Introduction\\OOP_Introduction.csproj",
+      "packagesPath": "C:\\Users\\eraye\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eraye\\Desktop\\BilgeAdam_Fatih_Hoca\\ErayOzelegitim\\13.12\\OOP_Introduction\\OOP_Introduction\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eraye\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net7.0": {
@@ -67,12 +67,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

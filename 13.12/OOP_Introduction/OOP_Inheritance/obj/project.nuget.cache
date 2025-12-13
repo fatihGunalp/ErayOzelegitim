@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ntm+iEoLprs=",
+  "dgSpecHash": "zOGUsYS9GS4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih\\Desktop\\ErayOzelEgitim\\13.12\\OOP_Introduction\\OOP_Inheritance\\OOP_Inheritance.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\eraye\\Desktop\\BilgeAdam_Fatih_Hoca\\ErayOzelegitim\\13.12\\OOP_Introduction\\OOP_Inheritance\\OOP_Inheritance.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eraye\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\eraye\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\eraye\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\eraye\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
