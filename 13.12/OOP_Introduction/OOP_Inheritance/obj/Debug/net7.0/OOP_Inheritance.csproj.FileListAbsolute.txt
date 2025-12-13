@@ -1,0 +1,15 @@
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\bin\Debug\net7.0\OOP_Inheritance.exe
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\bin\Debug\net7.0\OOP_Inheritance.deps.json
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\bin\Debug\net7.0\OOP_Inheritance.runtimeconfig.json
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\bin\Debug\net7.0\OOP_Inheritance.dll
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\bin\Debug\net7.0\OOP_Inheritance.pdb
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.sourcelink.json
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.dll
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\refint\OOP_Inheritance.dll
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.pdb
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\OOP_Inheritance.genruntimeconfig.cache
+C:\Users\Fatih\Desktop\ErayOzelEgitim\13.12\OOP_Introduction\OOP_Inheritance\obj\Debug\net7.0\ref\OOP_Inheritance.dll
