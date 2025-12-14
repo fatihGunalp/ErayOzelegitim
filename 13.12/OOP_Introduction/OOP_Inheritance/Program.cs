@@ -75,6 +75,8 @@ Islemci islemci2 = new Islemci
     Fiyat = 17000
 };
 
+
+
 islemciler.Add(islemci1);
 islemciler.Add(islemci2);
 
@@ -149,8 +151,21 @@ foreach(BaseClass item in urunler)
     }
 
     //Islemci
-    //eray test
+    if (item is EkranKart)
+    {
+        EkranKart gelenEkranKart = (EkranKart)item;
+        Console.WriteLine($"Ekran Kart Özellikleri:\nMarka: {gelenEkranKart.Marka} Model: {gelenEkranKart.Model} Fiyat: {gelenEkranKart.Fiyat}");
+    }
     //EkranKarti
-
+    if (item is Islemci)
+    {
+        Islemci gelenIslemci = (Islemci)item;
+        Console.WriteLine($"İşlemci Özellikleri:\nMarka: {gelenIslemci.Marka} Model: {gelenIslemci.Model} Fiyat: {gelenIslemci.Fiyat}");
+    }
     //Bilgisayar
+    if (item is Bilgisayar)
+    {
+        Bilgisayar gelenBilgisayar = (Bilgisayar)item;
+        Console.WriteLine($"Bilgisayar Özellikleri:\nAnakart: {gelenBilgisayar.Anakart} Ekran Karti: {gelenBilgisayar.EkranKart} İslemci: {gelenBilgisayar.Islemci}");
+    }
 }
