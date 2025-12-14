@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ErayAlistirma
+namespace OOP_FutbolTakim.Abstracts
 {
-    internal class Program
+    internal interface IKaleci
     {
-        static void Main(string[] args)
-        {
-        }
+        public string Degaj();
+        public string Kurtar();
     }
 }
