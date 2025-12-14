@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Product_Crud
+namespace Product_Crud.OldInterfaces
 {
-    internal interface IUpdate
+    internal interface IRead
     {
-        public string Update();
+        public string Read();
     }
 }

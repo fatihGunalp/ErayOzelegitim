@@ -6,30 +6,22 @@ using System.Threading.Tasks;
 
 namespace Product_Crud
 {
-    internal  class Product : ICreate, IRead, IDelete, IUpdate
+    internal class Product 
     {
+
+        //bir ürünün ...'sı olur.
         public int ID { get; set; }
         public string ProductName { get; set; }
         public int UnitPrice { get; set; }
 
-        public string Create()
+        
+        //bir ürünün bir adet kategorisi olur.
+        public Category Category { get; set; }
+
+        public override string ToString()
         {
-            return "Ürün Oluşturuldu";
+            return $"{ID} {ProductName} {UnitPrice} {Category.CategoryName}";
         }
 
-        public string Delete()
-        {
-            return "Ürün Silindi";
-        }
-
-        public string Read()
-        {
-            return "Ürün Okundu";
-        }
-
-        public string Update()
-        {
-            return "Ürün Güncellendi";
-        }
     }
 }

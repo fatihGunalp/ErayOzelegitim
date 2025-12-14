@@ -6,29 +6,15 @@ using System.Threading.Tasks;
 
 namespace Product_Crud
 {
-    internal class Category:Product,ICreate,IRead,IDelete,IUpdate
+    internal class Category
     {
         public int ID { get; set; }
         public string CategoryName { get; set; }
 
-        public string Create()
-        {
-            return "Kategori Oluşturuldu";
-        }
+        //bir kategorinin birden fazla ürünü olur.
 
-        public string Delete()
-        {
-            return "Kategori Silindi";
-        }
+        //public List<Product> Products { get; set; }
 
-        public string Read()
-        {
-            return "Kategori okundu";
-        }
-
-        public string Update()
-        {
-            return "Kategori Güncellendi";
-        }
+       
     }
 }

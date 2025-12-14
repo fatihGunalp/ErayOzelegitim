@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Product_Crud
+namespace Product_Crud.OldInterfaces
 {
-    internal interface IDelete
+    internal interface IUpdate
     {
-        public string Delete();
+        public string Update();
     }
 }
