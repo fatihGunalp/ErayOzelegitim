@@ -10,7 +10,7 @@ ogrenci2.Tanit();
 ogretmen1.Tanit();
 ogretmen2.Tanit();
 
-ogrenci1.Dersler.Add("Matematik");
+ogrenci1.Dersler.Add("Matematik");      
 ogrenci1.Dersler.Add("Fizik");
 ogrenci1.Dersler.Add("Tarih");
 ogrenci1.DersleriGoster();
