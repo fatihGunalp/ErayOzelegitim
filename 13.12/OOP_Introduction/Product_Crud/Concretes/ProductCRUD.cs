@@ -38,9 +38,23 @@ namespace Product_Crud.Concretes
             }
         }
 
-        public void UpdateProduct(Product product)
+       
+
+        public void UpdateProduct(Product updatedProduct)
         {
-           //todo: güncelleme işlemi yapılacak.
+            foreach (var product in products)
+            {
+                if (product.ID == updatedProduct.ID)
+                {
+                    product.ProductName = updatedProduct.ProductName;
+                    product.UnitPrice= updatedProduct.UnitPrice;
+                    product.Category.CategoryName = updatedProduct.Category.CategoryName;
+
+
+
+                }
+
+            }
         }
     }
 }
