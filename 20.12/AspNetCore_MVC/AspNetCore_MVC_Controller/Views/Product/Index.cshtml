@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<AspNetCore_MVC_Controller.Models.Product>
+
+<h1>Ürün Listesi</h1>
+
+<ul>
+@foreach(var product in Model){
+        <li><a href="/Product/Details/@product.ID">@product.ID</a> @product.ProductName @product.UnitPrice</li>
+}
+</ul>
