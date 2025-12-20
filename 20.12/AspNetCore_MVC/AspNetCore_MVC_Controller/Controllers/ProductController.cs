@@ -17,15 +17,17 @@ namespace AspNetCore_MVC_Controller.Controllers
         //} 
         #endregion
 
-        List<Product> products = new List<Product>
-            {
-                new Product{ID=1,ProductName="Chai",UnitPrice=15},
-                new Product{ID=2,ProductName="Chang",UnitPrice=25},
-                new Product{ID=3,ProductName="Ikura",UnitPrice=35},
+        //List<Product> products = new List<Product>
+        //    {
+        //        new Product{ID=1,ProductName="Chai",UnitPrice=15},
+        //        new Product{ID=2,ProductName="Chang",UnitPrice=25},
+        //        new Product{ID=3,ProductName="Ikura",UnitPrice=35},
 
-            };
+        //    };
 
         //Index
+
+        Context _context = new Context();
         public IActionResult Index()
         {
 
@@ -35,14 +37,14 @@ namespace AspNetCore_MVC_Controller.Controllers
             //Model transfer.
 
 
-            return View(products); //sayfa
+            return View(_context.Products.ToList()); //sayfa
         }
 
         //Detail
         public IActionResult Details(int id)
         {
             //product Detail: 
-            var product = products.FirstOrDefault(x => x.ID == id);
+            var product = _context.Products.FirstOrDefault(x => x.ID == id);
             if (product == null)
             {
                 //redirect

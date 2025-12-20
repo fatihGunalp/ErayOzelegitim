@@ -10,6 +10,7 @@ var app = builder.Build();
 //Pipeline
 
 app.UseRouting(); //Rotanýn kullanýlmasý aktif hale getir
+app.UseStaticFiles(); //wwwroot isimli klasörün dýþarýya açýlmasýný temsil eder.
 
 app.UseEndpoints(options =>
 {
