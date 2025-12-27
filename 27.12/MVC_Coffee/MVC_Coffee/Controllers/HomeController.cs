@@ -15,6 +15,7 @@ namespace MVC_Coffee.Controllers
            var coffees= SeedCoffeeData.coffees;
 
             ViewBag.Cart = CartData.coffees;
+            ViewBag.Orders = OrderData.Orders;
 
           
 

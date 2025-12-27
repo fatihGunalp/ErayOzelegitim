@@ -6,11 +6,33 @@ bu proje .Net MVC çerçevesi altında geliştirilmiştir. Amaç, anasayfa içer
 ## Proje Yapısı
 - Models
 	- Entities
+		- Coffee
+		- FilterCoffee
+		- Espresso
+		- Latte
+		- Order
+- ViewModels
+		- CartViewModel
 - Data
 	- SeedCoffeeData
+	- OrderData
+	- CartData
 - Controllers
 	- HomeController
 		- Index
+	- OrderController
+		- Create
 
 ## Views
-- Home/Index: SeedCoffeeData içerisinde bulunan bütün kahvelerin listelendiği sayfadır.
+- Home/Index: SeedCoffeeData içerisinde bulunan bütün kahvelerin listelendiği sayfadır. Bu sayfa içerisinde ziyaretçiler sepete istedikleri kahveyi ekleyebilirler. Oluşturulan sepet içerisindeki kahveler sipariş olarak tanımlanırlar.
+
+----------
+
+## Yarın işlenecekler
+- Cookie Mantığı
+- Session Mantığı
+- Area işlemleri
+- Repository pattern
+- Service pattern
+- Katmanlı mimari
+- Api 
