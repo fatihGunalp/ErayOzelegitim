@@ -3,6 +3,7 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
     List<MVC_Coffee.ViewModels.CartViewModel> cartList = ViewBag.Cart;
+    decimal totalPrice = 0;
 }
 
 <h1>Kahve Sipariş Anasayfası</h1>
@@ -54,8 +55,8 @@
                                         {
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" value="@size" type="radio" name="size" checked="@(coffee.Size==size)" />
-                                                    <label class="form-check-label">@size</label>
-                                                </div>
+                                                <label class="form-check-label">@size</label>
+                                            </div>
                                         }
                                     </div>
                                     <button type="submit" class="btn btn-sm btn-outline-primary">Boyut Seç</button>
@@ -63,7 +64,7 @@
                             }
 
 
-                            
+
                             <!--Eğer Coffee'nin tipi Espresso ise-->
                         </div>
                     </div>
@@ -74,13 +75,14 @@
     </div>
     <!--Sağ alan-->
     <div class="col-md-4">
-       <div class="card position-sticky" style="top:20px;" >
-           
-           <div class="card-body">
+        <div class="card position-sticky" style="top:20px;" >
+
+            <div class="card-body">
                 <h5 class="card-title">Sepet</h5>
                 <ul class="list-group">
                     @foreach (var cart in cartList)
                     {
+                        totalPrice += cart.Price;
                         <li class="list-group d-flex justify-content-between align-items-center">
                             <div>
                                 <div>@cart.Name</div>
@@ -90,6 +92,13 @@
                         </li>
                     }
                 </ul>
+                <div class="d-flex justify-content-between">
+                    <strong>Toplam</strong>
+                    <strong>@totalPrice.ToString("0.00")₺</strong>
+                </div>
+                <form action="/Order/Create" method="get">
+                    <button type="submit" class="btn btn-sm btn-success">Sipariş Oluştur</button>
+                </form>
            </div>
        </div>
     </div>
