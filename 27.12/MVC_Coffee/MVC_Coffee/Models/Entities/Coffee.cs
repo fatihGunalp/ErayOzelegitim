@@ -23,7 +23,7 @@ namespace MVC_Coffee.Models.Entities
                     break;
 
                 case CoffeeSize.Large:
-                    basePrice = 1.30m;
+                    basePrice *= 1.30m;
                     break;
             }
 

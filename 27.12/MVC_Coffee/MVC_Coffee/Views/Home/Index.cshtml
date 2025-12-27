@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    List<MVC_Coffee.ViewModels.CartViewModel> cartList = ViewBag.Cart;
 }
 
 <h1>Kahve Sipariş Anasayfası</h1>
@@ -45,7 +46,7 @@
                             }
 
                             @if (coffee is not MVC_Coffee.Models.Entities.Espresso){
-                                <form>
+                                <form method="post" action="/Home/SelectSize">
                                     <input type="hidden" value="@coffee.ID" name="id" />
 
                                     <div class="mb-2">
@@ -73,6 +74,23 @@
     </div>
     <!--Sağ alan-->
     <div class="col-md-4">
-        <h5>Sepet</h5>
+       <div class="card position-sticky" style="top:20px;" >
+           
+           <div class="card-body">
+                <h5 class="card-title">Sepet</h5>
+                <ul class="list-group">
+                    @foreach (var cart in cartList)
+                    {
+                        <li class="list-group d-flex justify-content-between align-items-center">
+                            <div>
+                                <div>@cart.Name</div>
+                                <small class="text-muted">@cart.Size</small>
+                            </div>
+                            <span>@cart.Price.ToString("0.00")₺</span>
+                        </li>
+                    }
+                </ul>
+           </div>
+       </div>
     </div>
 </div>
