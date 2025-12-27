@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_Coffee.Data;
+using MVC_Coffee.Models.Entities;
+using MVC_Coffee.Models.Entities.Enums;
 
 namespace MVC_Coffee.Controllers
 {
@@ -11,7 +13,16 @@ namespace MVC_Coffee.Controllers
 
            var coffees= SeedCoffeeData.coffees;
 
+
+          
+
             return View(coffees);
+        }
+
+        [HttpPost]
+        public IActionResult SelectSize(int id, CoffeeSize size)
+        {
+            return View();
         }
     }
 }

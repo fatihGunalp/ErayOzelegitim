@@ -7,3 +7,72 @@
 <h1>Kahve Sipariş Anasayfası</h1>
 
 <!--todo: Model'den teslim alınan kahaveler card içerisinde ayrı ayrı listelenecek.-->
+
+<div class="row">
+    <!--Sol alan-->
+    <div class="col-md-8">
+        <div class="row">
+            @foreach (var coffee in Model)
+            {
+                <!--Model'den teslim alınan her bir coffee için card oluşturulacak.-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between">
+                                @coffee.Name
+                                <small class="text-muted">@coffee.Price</small>
+                            </h5>
+
+                            @if (coffee is MVC_Coffee.Models.Entities.FilterCoffee fc)
+                            {
+                                <!--Eğer Coffee'nin tipi Filter ise-->
+                                <p>
+                                    <strong>Menşei: </strong> @fc.BeanOrigin
+                                </p>
+                            }
+
+                            else if (coffee is MVC_Coffee.Models.Entities.Latte lc)
+                            {
+                                <!--Eğer Coffee'nin tipi Latte ise-->
+                                <p>
+                                    <strong>Süt Tip: </strong> @lc.MilkType
+                                </p>
+                            }
+                            else if(coffee is MVC_Coffee.Models.Entities.Espresso ec){
+                                <p>
+                                    <strong>Shot: </strong> @ec.ShotCount
+                                </p>
+                            }
+
+                            @if (coffee is not MVC_Coffee.Models.Entities.Espresso){
+                                <form>
+                                    <input type="hidden" value="@coffee.ID" name="id" />
+
+                                    <div class="mb-2">
+                                        @foreach (MVC_Coffee.Models.Entities.Enums.CoffeeSize size in Enum.GetValues(typeof(MVC_Coffee.Models.Entities.Enums.CoffeeSize)))
+                                        {
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" value="@size" type="radio" name="size" checked="@(coffee.Size==size)" />
+                                                    <label class="form-check-label">@size</label>
+                                                </div>
+                                        }
+                                    </div>
+                                    <button type="submit" class="btn btn-sm btn-outline-primary">Boyut Seç</button>
+                                </form>
+                            }
+
+
+                            
+                            <!--Eğer Coffee'nin tipi Espresso ise-->
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <!--Sağ alan-->
+    <div class="col-md-4">
+        <h5>Sepet</h5>
+    </div>
+</div>
