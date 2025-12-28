@@ -11,6 +11,11 @@ namespace MVC_CoffeeApplication.Models.Context
             
         }
 
+        public CoffeeContext(DbContextOptions<CoffeeContext> options) : base(options)
+        {
+
+        }
+
         public DbSet<Category> Categories { get; set; }
         public DbSet<Coffee> Cofees { get; set; }
 
