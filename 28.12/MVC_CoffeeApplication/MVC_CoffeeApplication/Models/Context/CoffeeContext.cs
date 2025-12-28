@@ -1,11 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MVC_CoffeeApplication.Models.Entities;
 
+
 namespace MVC_CoffeeApplication.Models.Context
 {
     public class CoffeeContext:DbContext
     {
-
+        public CoffeeContext()
+        {
+            
+        }
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Coffee> Cofees { get; set; }
@@ -13,7 +17,7 @@ namespace MVC_CoffeeApplication.Models.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
+           
 
             string fatihConnection = "server=DESKTOP-J4PTH70;database=CoffeeDb;uid=sa;pwd=123;TrustServerCertificate=True;";
 

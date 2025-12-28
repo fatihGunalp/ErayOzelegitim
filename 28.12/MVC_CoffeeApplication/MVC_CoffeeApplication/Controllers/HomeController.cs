@@ -15,6 +15,7 @@ namespace MVC_CoffeeApplication.Controllers
 
         public IActionResult Index()
         {
+         
             return View();
         }
 
