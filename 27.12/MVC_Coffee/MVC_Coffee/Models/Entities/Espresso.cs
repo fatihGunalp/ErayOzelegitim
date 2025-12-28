@@ -4,5 +4,6 @@
     {
         //Espresso ka. shot içeriyor.
         public int ShotCount { get; set; }
+      
     }
 }
