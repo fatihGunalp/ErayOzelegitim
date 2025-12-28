@@ -1,7 +1,31 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
+using MVC_CoffeeApplication.Models.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+string machineName = Environment.MachineName;
+string connectionString=string.Empty;
+
+switch (machineName)
+{
+    case "DESKTOP-J4PTH70":
+        connectionString = builder.Configuration.GetConnectionString("FatihConnection");
+        break;
+
+    case "REVERAN\\SQLEXPRESS":
+        connectionString = builder.Configuration.GetConnectionString("ErayConnection");
+        break;
+}
+
+
+
+//CoffeeContext Servis içerisinde kullanýlmasý gerekiyor.
+builder.Services.AddDbContext<CoffeeContext>(options => options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 

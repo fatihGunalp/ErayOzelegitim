@@ -15,21 +15,21 @@ namespace MVC_CoffeeApplication.Models.Context
         public DbSet<Coffee> Cofees { get; set; }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
            
 
-            string fatihConnection = "server=DESKTOP-J4PTH70;database=CoffeeDb;uid=sa;pwd=123;TrustServerCertificate=True;";
+        //    string fatihConnection = "server=DESKTOP-J4PTH70;database=CoffeeDb;uid=sa;pwd=123;TrustServerCertificate=True;";
 
-            string erayConnection = "server=REVERAN\\SQLEXPRESS;databese=CoffeDb;Trusted_Connection=True;TrustServerCertificate=True;";
+        //    string erayConnection = "server=REVERAN\\SQLEXPRESS;databese=CoffeDb;Trusted_Connection=True;TrustServerCertificate=True;";
 
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer(fatihConnection);
-            }
+        //    if (!optionsBuilder.IsConfigured)
+        //    {
+        //        optionsBuilder.UseSqlServer(fatihConnection);
+        //    }
 
-            base.OnConfiguring(optionsBuilder);
-        }
+        //    base.OnConfiguring(optionsBuilder);
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
