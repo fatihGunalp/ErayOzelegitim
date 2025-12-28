@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using MVC_CoffeeApplication.Models.Context;
+using MVC_CoffeeApplication.Models.Entities;
+using MVC_CoffeeApplication.Repositories.Abstracts;
+using MVC_CoffeeApplication.Repositories.Concretes;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +29,12 @@ switch (machineName)
 
 //CoffeeContext Servis içerisinde kullanýlmasý gerekiyor.
 builder.Services.AddDbContext<CoffeeContext>(options => options.UseSqlServer(connectionString));
+
+
+
+//Repository Service
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICoffeeRepository, CoffeeRepository>();
 
 var app = builder.Build();
 

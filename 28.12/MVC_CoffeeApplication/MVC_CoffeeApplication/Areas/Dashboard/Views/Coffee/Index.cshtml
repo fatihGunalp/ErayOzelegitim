@@ -1,0 +1,45 @@
+﻿@model List<MVC_CoffeeApplication.Models.Entities.Coffee>
+@{
+    ViewData["Title"] = "Coffee List";
+    Layout = "~/Areas/Dashboard/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <h5>@ViewData["Title"]</h5>
+                <a href="/Dashboard/Coffee/Create" class="btn btn-sm btn-success">New Coffee</a>
+            </div>
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Bean Origin</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var coffee in Model)
+                        {
+                            <tr>
+                                <th>@coffee.ID</th>
+                                <th>@coffee.BeanOrigin</th>
+                                <th>@coffee.Price</th>
+                                
+                                <th>
+                                    <a href="/Dashboard/Coffee/Update/@coffee.ID" class="btn btn-sm btn-warning">update</a>
+                                    <a href="/Dashboard/Coffee/Delete/@coffee.ID" class="btn btn-sm btn-danger">delete</a>
+                                </th>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

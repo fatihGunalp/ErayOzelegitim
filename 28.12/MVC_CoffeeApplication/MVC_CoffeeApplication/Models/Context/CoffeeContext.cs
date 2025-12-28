@@ -51,6 +51,18 @@ namespace MVC_CoffeeApplication.Models.Context
 
 
 
+            modelBuilder.Entity<CoffeeSize>().HasKey(x => new { x.SizeId, x.CoffeeId });
+
+            modelBuilder.Entity<CoffeeSize>()
+                .HasOne(x => x.Coffee)
+                .WithMany(x => x.CoffeeSizes)
+                .HasForeignKey(x => x.CoffeeId);
+
+
+            modelBuilder.Entity<CoffeeSize>()
+               .HasOne(x => x.Size)
+               .WithMany(x => x.CoffeeSizes)
+               .HasForeignKey(x => x.SizeId);
 
 
 

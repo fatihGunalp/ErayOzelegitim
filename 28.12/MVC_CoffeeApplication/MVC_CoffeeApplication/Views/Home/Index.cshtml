@@ -1,8 +1,52 @@
-﻿@{
+﻿@model List<MVC_CoffeeApplication.ViewModels.CoffeeViewModel>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+    <!--Sol alan-->
+    <div class="col-md-8">
+        <div class="row">
+            @foreach (var coffee in Model)
+            {
+                <!--Model'den teslim alınan her bir coffee için card oluşturulacak.-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between">
+                                @coffee.BeanOrigin
+                                <small class="text-muted">@coffee.Id</small>
+                            </h5>
+                            <h6>@coffee.Size</h6>
+                            
+
+
+                            <!--Eğer Coffee'nin tipi Espresso ise-->
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <!--Sağ alan-->
+    <div class="col-md-4">
+        <div class="card position-sticky" style="top:20px;">
+
+            <div class="card-body">
+                <h5 class="card-title">Sepet</h5>
+                <ul class="list-group">
+                   
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <strong>Toplam</strong>
+                   
+                </div>
+                <form action="/Order/Create" method="get">
+                    <button type="submit" class="btn btn-sm btn-success">Sipariş Oluştur</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
