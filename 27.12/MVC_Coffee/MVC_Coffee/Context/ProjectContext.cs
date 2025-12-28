@@ -9,7 +9,7 @@ namespace MVC_Coffee.Context
 
         private string fatihConnectionString = "server=DESKTOP-J4PTH70;database=CoffeeDb;uid=sa;pwd=123;TrustServerCertificate=True;";
 
-        private string erayConnectionString = "";
+        private string erayConnectionString = "server=REVERAN\\SQLEXPRESS;databese=CoffeDb;Trusted_Connection=True;TrustServerCertificate=True;";
 
         //veritabanına hangi nesneler tablo olarak gidecek.
 
